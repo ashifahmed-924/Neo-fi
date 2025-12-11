@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles to prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 /* Hide scrollbar but keep scroll functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */

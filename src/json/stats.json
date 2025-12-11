@@ -1,0 +1,23 @@
+{
+  "pillLabel": "Statistics",
+  "title": "Completely Leverage Product",
+  "subtitle": "Leading the way in blockchain innovation, we are redefining how the world connects, secures, and transacts, bringing a new era of decentralized technology.",
+  "items": [
+    {
+      "id": 1,
+      "value": "2M+",
+      "label": "Users"
+    },
+    {
+      "id": 2,
+      "value": "500k+",
+      "label": "Transactions"
+    },
+    {
+      "id": 3,
+      "value": "35+",
+      "label": "Countries"
+    }
+  ]
+}
+

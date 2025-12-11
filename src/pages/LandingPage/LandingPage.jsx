@@ -19,7 +19,7 @@ import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="bg-darkBg ">
+    <div className="bg-darkBg w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <Brands />

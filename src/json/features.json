@@ -1,0 +1,26 @@
+{
+  "pillLabel": "Features",
+  "title": "Future Breakdown",
+  "subtitle": "Secure, scalable, and decentralized solutions for your digital assets—experience the future of financial freedom.",
+  "items": [
+    {
+      "id": 1,
+      "iconKey": "blockchain",
+      "title": "Scalability",
+      "description": "Adapt and grow, no matter the demand on grow."
+    },
+    {
+      "id": 2,
+      "iconKey": "scale",
+      "title": "Decentralisation",
+      "description": "Decentralization. Web3 aims to move away from the centralized."
+    },
+    {
+      "id": 3,
+      "iconKey": "connectivity",
+      "title": "Connectivity",
+      "description": "Computers will be able to understand information similarly to humans."
+    }
+  ]
+}
+

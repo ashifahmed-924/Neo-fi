@@ -1,83 +1,11 @@
 import React from "react";
 import profile from "../assets/profile.svg";
-
-const testimonials = [
-  {
-    id: 1,
-    name: "Kathryn Murphy",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 2,
-    name: "Eleanor Pena",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 3,
-    name: "Darrell Steward",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 4,
-    name: "Bessie Cooper",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 5,
-    name: "Jerome Bell",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 6,
-    name: "Guy Hawkins",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 7,
-    name: "Robert Fox",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 8,
-    name: "Cameron Williamson",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 9,
-    name: "Jane Smith",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-  {
-    id: 10,
-    name: "John Doe",
-    role: "Co-founder",
-    quote:
-      "“AI streamlines international client coordination by scheduling emails for optimal inbox timing.”",
-  },
-];
+import testimonialsData from "../json/testimonials.json";
 
 // Reusable card component
 const TestimonialCard = ({ item }) => (
-  <div className="w-[280px] sm:w-[320px] md:w-[340px] lg:w-[373px] h-[204px] flex-shrink-0 flex flex-col items-start gap-8 p-6 sm:p-8 rounded-[16px] border border-[#4D4D4D] bg-[#000] backdrop-blur-[4.59px]">
-    <p className="text-[#EDEDF2] font-alexandria text-[14px] sm:text-[16px] leading-normal w-full">
+  <div className="w-[280px] sm:w-[320px] md:w-[340px] lg:w-[373px] h-auto min-h-[204px] flex-shrink-0 flex flex-col items-start gap-6 sm:gap-8 p-5 sm:p-6 md:p-8 rounded-[16px] border border-grayBorder bg-darkBg backdrop-blur-[4.59px]">
+    <p className="text-cardText font-alexandria text-[14px] sm:text-[16px] leading-normal w-full">
       {item.quote}
     </p>
     <div className="flex items-center gap-3 w-full">
@@ -88,17 +16,11 @@ const TestimonialCard = ({ item }) => (
       />
       <div className="flex flex-col">
         <span
-          className="font-alexandria text-[13px] sm:text-[14px] leading-normal"
-          style={{
-            background: "linear-gradient(0deg, #FFF 0%, #FFF 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-          }}
+          className="font-alexandria text-[13px] sm:text-[14px] leading-normal bg-gradient-text-white bg-clip-text text-transparent"
         >
           {item.name}
         </span>
-        <span className="text-[#4D4D4D] font-alexandria text-[12px] leading-normal">
+        <span className="text-mutedLabel font-alexandria text-[12px] leading-normal">
           {item.role}
         </span>
       </div>
@@ -111,32 +33,26 @@ const Testimonial = () => {
     <section className="relative w-full bg-darkBg pt-[80px] pb-24 overflow-hidden">
       {/* Soft Blue Glow Behind Title */}
       <div
-        className="pointer-events-none absolute left-1/2 -top-40 -translate-x-1/2 w-[606px] h-[425px] rounded-[606px]"
-        style={{
-          background: "rgba(74, 90, 236, 0.06)",
-          filter: "blur(139.9px)",
-        }}
+        className="pointer-events-none absolute left-1/2 -top-40 -translate-x-1/2 w-[606px] h-[425px] rounded-[606px] bg-blue-glow-soft blur-[139.9px]"
       />
 
       {/* Content Wrapper */}
-      <div className="relative max-w-[1280px] mx-auto px-6 lg:px-[120px] flex flex-col items-center">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-[120px] flex flex-col items-center">
         {/* Testimonial Tag */}
-        <div className="inline-flex items-center justify-center px-5 py-2 rounded-[24px] border border-[#2E2E2E] backdrop-blur-[20px] mb-5">
+        <div className="inline-flex items-center justify-center px-5 py-2 rounded-[24px] border border-grayLine backdrop-blur-[20px] mb-5">
           <span className="text-neoGreen font-alexandria text-[14px]">
-            Testimonial
+            {testimonialsData.badge}
           </span>
         </div>
 
         {/* Heading */}
         <h2 className="text-neoWhite font-alexandria text-[32px] md:text-[40px] lg:text-[48px] font-normal leading-[110%] text-center capitalize mb-5">
-          Trusted By Innovators
+          {testimonialsData.title}
         </h2>
 
         {/* Subtitle */}
         <p className="text-neoGray font-inter text-[16px] md:text-[18px] leading-[140%] text-center max-w-[644px]">
-          Secure your digital assets with the peace of mind that comes from
-          knowing you are protected by the best technology in the blockchain
-          space.
+          {testimonialsData.subtitle}
         </p>
       </div>
 
@@ -144,35 +60,19 @@ const Testimonial = () => {
       <div className="relative w-full mt-8 mb-8">
         {/* Left Smoke Overlay */}
         <div
-          className="absolute left-0 top-0 bottom-0 z-20 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(83deg, #1B1B1B 4.91%, rgba(27, 27, 27, 0.00) 94.64%)",
-            width: "100px",
-          }}
+          className="absolute left-0 top-0 bottom-0 z-20 pointer-events-none w-[100px] bg-gradient-overlay-left"
         />
         {/* Right Smoke Overlay */}
         <div
-          className="absolute right-0 top-0 bottom-0 z-20 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(263deg, #1B1B1B 4.91%, rgba(27, 27, 27, 0.00) 94.64%)",
-            width: "100px",
-          }}
+          className="absolute right-0 top-0 bottom-0 z-20 pointer-events-none w-[100px] bg-gradient-overlay-right"
         />
 
         {/* MOBILE: 1 row, horizontal swipe */}
         <div
-          className="relative w-full overflow-x-auto scrollbar-hide md:hidden"
-          style={{
-            scrollBehavior: "smooth",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
+          className="relative w-full overflow-x-auto scrollbar-hide md:hidden scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [-webkit-overflow-scrolling:touch]"
         >
-          <div className="flex gap-5 min-w-max px-4">
-            {testimonials.map((item) => (
+          <div className="flex gap-4 min-w-max px-4 pb-2">
+            {testimonialsData.items.map((item) => (
               <TestimonialCard key={item.id} item={item} />
             ))}
           </div>
@@ -180,30 +80,24 @@ const Testimonial = () => {
 
         {/* TABLET: 3 rows, horizontal swipe */}
         <div
-          className="hidden md:block lg:hidden relative w-full overflow-x-auto scrollbar-hide"
-          style={{
-            scrollBehavior: "smooth",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
+          className="hidden md:block lg:hidden relative w-full overflow-x-auto scrollbar-hide scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [-webkit-overflow-scrolling:touch]"
         >
           <div className="inline-flex flex-col gap-5 min-w-max px-4">
             {/* Row 1 */}
             <div className="flex gap-5">
-              {testimonials.slice(0, 4).map((item) => (
+              {testimonialsData.items.slice(0, 4).map((item) => (
                 <TestimonialCard key={item.id} item={item} />
               ))}
             </div>
             {/* Row 2 */}
             <div className="flex gap-5">
-              {testimonials.slice(4, 7).map((item) => (
+              {testimonialsData.items.slice(4, 7).map((item) => (
                 <TestimonialCard key={item.id} item={item} />
               ))}
             </div>
             {/* Row 3 */}
             <div className="flex gap-5">
-              {testimonials.slice(7).map((item) => (
+              {testimonialsData.items.slice(7).map((item) => (
                 <TestimonialCard key={item.id} item={item} />
               ))}
             </div>
@@ -212,18 +106,12 @@ const Testimonial = () => {
 
         {/* DESKTOP: your original 2-row brick layout */}
         <div
-          className="hidden lg:block relative w-full overflow-x-auto scrollbar-hide"
-          style={{
-            scrollBehavior: "smooth",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
+          className="hidden lg:block relative w-full overflow-x-auto scrollbar-hide scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [-webkit-overflow-scrolling:touch]"
         >
           <div className="inline-flex flex-col gap-5 min-w-max px-4">
             {/* First Row – even indexes */}
             <div className="flex gap-5">
-              {testimonials.map((item, index) =>
+              {testimonialsData.items.map((item, index) =>
                 index % 2 === 0 ? (
                   <TestimonialCard key={item.id} item={item} />
                 ) : null
@@ -232,7 +120,7 @@ const Testimonial = () => {
 
             {/* Second Row – odd indexes, offset for brick effect */}
             <div className="flex gap-5 ml-[196.5px]">
-              {testimonials.map((item, index) =>
+              {testimonialsData.items.map((item, index) =>
                 index % 2 === 1 ? (
                   <TestimonialCard key={item.id} item={item} />
                 ) : null

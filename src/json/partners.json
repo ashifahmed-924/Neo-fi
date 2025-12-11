@@ -1,0 +1,26 @@
+{
+  "heading": "Satisfied partners",
+  "brands": [
+    {
+      "id": 1,
+      "imageKey": "frame1"
+    },
+    {
+      "id": 2,
+      "imageKey": "frame2"
+    },
+    {
+      "id": 3,
+      "imageKey": "frame3"
+    },
+    {
+      "id": 4,
+      "imageKey": "frame4"
+    },
+    {
+      "id": 5,
+      "imageKey": "frame5"
+    }
+  ]
+}
+
