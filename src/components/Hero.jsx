@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { GoDotFill } from "react-icons/go";
 import { FaPlay } from "react-icons/fa6";
 import image1 from "../assets/image1.png";
+import dothero from "../assets/dothero.svg";
 // import image2 from "../assets/image2.png";
 // import image3 from "../assets/image3.png";
 
@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="relative w-full bg-darkBg text-neoWhite overflow-hidden">
       {/* Blue glow background on left */}
-      <div className="pointer-events-none absolute -left-40 md:-left-20 top-10 h-[300px] w-[300px] md:h-[420px] md:w-[420px] rounded-full bg-[#19085C] blur-3xl opacity-70" />
+      <div className="pointer-events-none absolute -left-40 md:-left-20 top-10 h-[300px] w-[300px] md:h-[420px] md:w-[420px] rounded-full bg-[#19085C] blur-3xl opacity-30" />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[120px] pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-14 md:pb-16 flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20">
         {/* LEFT CONTENT */}
@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Decentralised pill */}
           <div className="inline-flex items-center gap-2 rounded-[24px] border border-gradient1 bg-black/40 backdrop-blur-[20px] px-3 py-[10px] mb-6 sm:mb-8">
             <span className="flex h-[9px] w-[9px] items-center justify-center">
-              <GoDotFill className="w-[9px] h-[9px] text-neoGreen" />
+              <img src={dothero} alt="dot" className="w-[9px] h-[9px]" />
             </span>
             <span className="text-neoGreen text-[12px] sm:text-[14px] font-normal font-alexandria">
               Decentralised

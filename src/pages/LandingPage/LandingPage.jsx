@@ -6,6 +6,12 @@ import Features from "../../components/features";
 import Stats from "../../components/Stats";
 import MoreFeature from "../../components/MoreFeature";
 import Testimonial from "../../components/Testimonial";
+import FAQ from "../../components/FAQ";
+import CTA from "../../components/CTA";
+import Footer from "../../components/Footer";
+
+
+
 
 
 
@@ -21,7 +27,10 @@ const LandingPage = () => {
       <Stats />
       <MoreFeature />
       <Testimonial /> 
-
+      <FAQ />
+      <CTA />
+      <Footer/>
+      
     </div>
   );
 };
