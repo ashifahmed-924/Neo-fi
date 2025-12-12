@@ -30,7 +30,7 @@ const TestimonialCard = ({ item }) => (
 
 const Testimonial = () => {
   return (
-    <section className="relative w-full bg-darkBg pt-[80px] pb-24 overflow-hidden">
+    <section className="relative w-full bg-surfaceDark pt-[80px] pb-24 overflow-hidden">
       {/* Soft Blue Glow Behind Title */}
       <div
         className="pointer-events-none absolute left-1/2 -top-40 -translate-x-1/2 w-[606px] h-[425px] rounded-[606px] bg-blue-glow-soft blur-[139.9px]"

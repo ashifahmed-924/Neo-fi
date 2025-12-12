@@ -3,7 +3,7 @@ import ctaData from "../json/cta.json";
 
 const CTA = () => {
   return (
-    <section className="w-full bg-darkBg py-12 md:py-16 lg:py-[80px] flex flex-col items-center text-center px-4 sm:px-6 overflow-x-hidden">
+    <section className="w-full bg-surfaceDark py-12 md:py-16 lg:py-[80px] flex flex-col items-center text-center px-4 sm:px-6 overflow-x-hidden">
 
       {/* CTA Pill */}
       <div 

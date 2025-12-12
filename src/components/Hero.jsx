@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[120px] pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-14 md:pb-16 flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20 overflow-x-hidden">
         {/* LEFT CONTENT */}
-        <div className="flex-1 w-full text-center lg:text-left">
+        <div className="flex-1 w-full text-center lg:text-left ">
           {/* Decentralised pill */}
           <div className="inline-flex items-center justify-center gap-2 rounded-[24px] border border-grayBorder bg-black/40 backdrop-blur-[20px] mb-6 sm:mb-8 w-[137px] h-[37px]">
             <span className="flex h-[9px] w-[9px] items-center justify-center">
