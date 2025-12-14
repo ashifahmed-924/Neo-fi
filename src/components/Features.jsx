@@ -26,7 +26,7 @@ const Features = () => {
       />
 
       {/* CONTENT */}
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-[120px] flex flex-col items-center gap-10">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-[120px] flex flex-col items-center gap-8 md:gap-10">
         {/* Pill */}
         <div className="inline-flex items-center justify-center rounded-[24px] border border-grayBorder bg-black/40 backdrop-blur-[20px] px-4 py-[10px]">
           <span className="text-neoGreen font-alexandria text-[14px] font-normal">
@@ -36,17 +36,17 @@ const Features = () => {
 
         {/* Heading + Subtitle */}
         <div className="flex flex-col items-center gap-4">
-          <h2 className="text-neoWhite text-center font-alexandria font-bold text-[32px] md:text-[40px] lg:text-[48px]">
+          <h2 className="text-neoWhite text-center font-alexandria font-bold text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px]">
             {featuresData.title}
           </h2>
 
-          <p className="text-neoGray text-center font-inter text-[16px] md:text-[18px] leading-[140%] max-w-[640px]">
+          <p className="text-neoGray text-center font-inter text-[16px] md:text-[17px] lg:text-[18px] leading-[140%] max-w-[600px] md:max-w-[620px] lg:max-w-[640px]">
             {featuresData.subtitle}
           </p>
         </div>
 
         {/* Cards row */}
-        <div className="mt-10 flex flex-col md:flex-row justify-center gap-6 w-full px-2 sm:px-0">
+        <div className="mt-8 md:mt-10 flex flex-col md:flex-row justify-center gap-6 md:gap-6 lg:gap-8 w-full px-2 sm:px-0">
           {featuresData.items.map((item) => {
             // Handle line break for Decentralisation description
             const description = item.description.includes("Web3 aims to move") 
@@ -61,7 +61,7 @@ const Features = () => {
             return (
               <div
                 key={item.id}
-                className="w-full md:w-[384px] h-auto min-h-[264px] mx-auto rounded-card border border-grayBorder bg-white/5 px-6 sm:px-8 md:px-[36px] pt-8 sm:pt-10 md:pt-[48px] pb-8 sm:pb-10 md:pb-[48px] flex flex-col items-center"
+                className="w-full md:w-[300px] lg:w-[340px] xl:w-[384px] h-auto min-h-[264px] mx-auto rounded-card border border-grayBorder bg-white/5 px-6 sm:px-8 md:px-6 lg:px-8 xl:px-[36px] pt-8 sm:pt-10 md:pt-10 lg:pt-12 xl:pt-[48px] pb-8 sm:pb-10 md:pb-10 lg:pb-12 xl:pb-[48px] flex flex-col items-center"
               >
                 {/* Icon */}
                 <img

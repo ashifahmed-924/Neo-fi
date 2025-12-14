@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <footer className="w-full bg-darkBg mt-12 sm:mt-16 md:mt-20 lg:mt-[80px] overflow-x-hidden">
       {/* TOP SECTION */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[120px] pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-10">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 w-full justify-between">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-[120px] pt-12 sm:pt-16 md:pt-20 lg:pt-20 xl:pt-24 pb-8 sm:pb-10">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-12 lg:gap-16 xl:gap-24 w-full justify-between">
           {/* LEFT: Logo + Columns */}
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 w-full lg:w-auto items-center lg:items-start">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-16 xl:gap-20 w-full md:w-auto items-center md:items-start">
             {/* Logo - centered and aligned with headings */}
             <div className="flex items-center justify-center">
               <img
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             {/* Link Columns */}
-            <div className="flex flex-col sm:flex-row gap-12 lg:gap-16 justify-center">
+            <div className="flex flex-col sm:flex-row gap-10 md:gap-12 lg:gap-14 xl:gap-16 justify-center">
               {/* Quick Links */}
               <div>
                 <h4 className="text-neoWhite font-inter text-[18px] mb-4 text-center sm:text-left">
@@ -76,9 +76,9 @@ const Footer = () => {
           </div>
 
           {/* RIGHT: Newsletter */}
-          <div className="w-full lg:w-[360px] flex flex-col gap-3">
-            <p className="text-neoWhite font-inter text-[18px] leading-[130%] text-center lg:text-left">
-              {footerData.newsletterTitle.split(' ').slice(0, 4).join(' ')} <br className="hidden lg:block" /> {footerData.newsletterTitle.split(' ').slice(4).join(' ')}
+          <div className="w-full md:w-[320px] lg:w-[340px] xl:w-[360px] flex flex-col gap-3">
+            <p className="text-neoWhite font-inter text-[16px] md:text-[17px] lg:text-[18px] leading-[130%] text-center md:text-left">
+              {footerData.newsletterTitle.split(' ').slice(0, 4).join(' ')} <br className="hidden md:block" /> {footerData.newsletterTitle.split(' ').slice(4).join(' ')}
             </p>
 
             <div className="flex items-center border-b border-grayLine pb-2 mt-2">
@@ -87,7 +87,7 @@ const Footer = () => {
                 placeholder={footerData.newsletterPlaceholder}
                 className="w-full bg-transparent border-none outline-none text-[14px] font-alexandria text-neoGray placeholder:text-neoGray"
               />
-              <button className="ml-3 w-8 h-8 lg:w-9 lg:h-9 rounded-full bg-neoGreen flex items-center justify-center hover:brightness-110 transition">
+              <button className="ml-3 w-8 h-8 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full bg-neoGreen flex items-center justify-center hover:brightness-110 transition">
                 <FiArrowRight className="text-black w-4 h-4" />
               </button>
             </div>

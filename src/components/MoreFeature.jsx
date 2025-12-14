@@ -17,13 +17,13 @@ const iconMap = {
 
 const MoreFeature = () => {
   return (
-    <section className="relative w-full bg-darkBg py-12 md:py-16 lg:py-24 overflow-hidden">
+    <section className="relative w-full bg-darkBg py-12 md:py-16 lg:py-20 xl:py-24 overflow-hidden">
       {/* Blue glow */}
       <div
         className="pointer-events-none absolute left-1/2 -top-40 -translate-x-1/2 w-[606px] h-[425px] rounded-[606px] bg-blue-glow-soft blur-[139.9px]"
       />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[120px] flex flex-col items-center gap-6 md:gap-8 lg:gap-10">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-[120px] flex flex-col items-center gap-6 md:gap-8 lg:gap-10">
         {/* Feature Tag */}
         <div className="inline-flex items-center justify-center gap-2 px-4 md:px-5 py-2 md:py-3 rounded-[24px] border border-grayLine backdrop-blur-[20px]">
           <span className="text-neoGreen font-alexandria text-[12px] md:text-[14px] font-normal leading-normal">
@@ -33,23 +33,23 @@ const MoreFeature = () => {
 
         {/* Main Heading + description */}
         <div className="flex flex-col items-center gap-4 md:gap-5">
-          <h2 className="text-neoWhite font-alexandria text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-normal leading-[100%] text-center capitalize px-4">
+          <h2 className="text-neoWhite font-alexandria text-[28px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] font-normal leading-[100%] text-center capitalize px-4">
             {moreFeatureData.title}
           </h2>
 
-          <p className="text-neoGray font-inter text-[14px] sm:text-[16px] md:text-[18px] font-normal leading-[140%] text-center w-full max-w-[644px] px-4">
+          <p className="text-neoGray font-inter text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-normal leading-[140%] text-center w-full max-w-[600px] md:max-w-[620px] lg:max-w-[644px] px-4">
             {moreFeatureData.subtitle}
           </p>
         </div>
 
         {/* Image + Cards */}
-        <div className="mt-4 md:mt-6 flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-[72px] w-full">
+        <div className="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-[72px] w-full">
           {/* Left Image */}
-          <div className="flex-1 flex justify-center lg:justify-start w-full">
+          <div className="flex-1 flex justify-center md:justify-start w-full">
             <img
               src={imagetwo}
               alt="Blockchain Visual"
-              className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[460px] object-contain"
+              className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] lg:max-w-[400px] xl:max-w-[460px] object-contain"
             />
           </div>
 
@@ -58,7 +58,7 @@ const MoreFeature = () => {
             {moreFeatureData.items.map((item) => (
               <div
                 key={item.id}
-                className="w-full lg:w-[622px] h-auto md:h-[156px] flex flex-col justify-start items-start px-4 sm:px-5 py-6 md:py-[30px] rounded-section border border-grayBorder bg-surfaceDark"
+                className="w-full md:w-full lg:w-[500px] xl:w-[622px] h-auto md:h-[156px] flex flex-col justify-start items-start px-4 sm:px-5 md:px-5 lg:px-6 py-6 md:py-[30px] rounded-section border border-grayBorder bg-surfaceDark"
               >
                 {/* Icon + Title */}
                 <div className="flex items-start gap-2 md:gap-3 w-full mb-2">
@@ -68,13 +68,13 @@ const MoreFeature = () => {
                     alt={item.title}
                   />
 
-                  <h3 className="text-neoWhite font-inter text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[140%] flex-1">
+                  <h3 className="text-neoWhite font-inter text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-normal leading-[140%] flex-1">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="text-neoGray font-alexandria text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal w-full">
+                <p className="text-neoGray font-alexandria text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-normal leading-normal w-full">
                   {item.description}
                 </p>
               </div>
