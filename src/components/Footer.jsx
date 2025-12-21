@@ -87,7 +87,7 @@ const Footer = () => {
                 placeholder={footerData.newsletterPlaceholder}
                 className="w-full bg-transparent border-none outline-none text-[14px] font-alexandria text-neoGray placeholder:text-neoGray"
               />
-              <button className="ml-3 w-8 h-8 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full bg-neoGreen flex items-center justify-center hover:brightness-110 transition">
+              <button className="ml-3 w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-9 rounded-full bg-neoGreen flex items-center justify-center hover:brightness-110 transition">
                 <FiArrowRight className="text-black w-4 h-4" />
               </button>
             </div>

@@ -3,11 +3,11 @@ import statsData from "../json/stats.json";
 
 const Stats = () => {
   return (
-    <section className="relative w-full bg-surfaceDark flex justify-center items-center py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 overflow-hidden">
+    <section className="relative w-full bg-surfaceDark flex justify-center items-center py-8 sm:py-12 md:py-16 lg:py-[80px] px-4 sm:px-6 overflow-hidden">
       {/* Inner container (max 1440px) */}
       <div className="relative w-full max-w-[1440px] flex justify-center items-center">
         {/* Stats card */}
-        <div className="relative z-10 w-full max-w-[920px] mx-auto rounded-[24px] px-4 sm:px-6 md:px-16 lg:px-[120px] py-8 sm:py-12 md:py-16 lg:py-[72px] flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-[32px]">
+        <div className="relative z-10 w-full max-w-[920px] mx-auto rounded-[24px] px-4 sm:px-6 md:px-16 lg:px-[120px] py-6 sm:py-8 md:py-10 lg:py-[48px] flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-[24px]">
           {/* Blue glow behind card */}
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[606px] h-[425px] rounded-[606px] -z-10 bg-blue-glow-strong blur-[139.9px]"

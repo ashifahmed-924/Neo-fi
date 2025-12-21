@@ -32,7 +32,7 @@ const CTA = () => {
 
       {/* CTA Button */}
       <button 
-        className="bg-neoGreen flex items-center justify-center gap-1.5 hover:brightness-110 transition py-3 px-5 md:py-3.5 md:px-6 rounded-pill"
+        className="bg-neoGreen flex items-center justify-center gap-1.5 hover:brightness-110 transition py-3 px-5 md:py-3.5 md:px-6 "
       >
         <span 
           className="font-alexandria text-[16px] sm:text-[17px] md:text-[18px] font-normal text-black leading-normal"

@@ -58,25 +58,25 @@ const MoreFeature = () => {
             {moreFeatureData.items.map((item) => (
               <div
                 key={item.id}
-                className="w-full md:w-full lg:w-[500px] xl:w-[622px] h-auto md:h-[156px] flex flex-col justify-start items-start px-4 sm:px-5 md:px-5 lg:px-6 py-6 md:py-[30px] rounded-section border border-grayBorder bg-surfaceDark"
+                className="w-full md:w-full lg:w-[500px] xl:w-[622px] h-auto flex flex-row items-start gap-4 sm:gap-5 md:gap-6 px-4 sm:px-5 md:px-5 lg:px-6 py-6 md:py-[30px] rounded-section border border-grayBorder bg-surfaceDark"
               >
-                {/* Icon + Title */}
-                <div className="flex items-start gap-2 md:gap-3 w-full mb-2">
-                  <img
-                    src={iconMap[item.iconKey]}
-                    className="w-6 h-6 md:w-8 md:h-8 object-contain flex-shrink-0 mt-1"
-                    alt={item.title}
-                  />
+                {/* Icon */}
+                <img
+                  src={iconMap[item.iconKey]}
+                  className="w-6 h-6 md:w-8 md:h-8 object-contain flex-shrink-0 mt-1"
+                  alt={item.title}
+                />
 
-                  <h3 className="text-neoWhite font-inter text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-normal leading-[140%] flex-1">
+                {/* Content Container (Title + Description) */}
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-neoWhite font-inter text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-normal leading-[140%]">
                     {item.title}
                   </h3>
-                </div>
 
-                {/* Description */}
-                <p className="text-neoGray font-alexandria text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-normal leading-normal w-full">
-                  {item.description}
-                </p>
+                  <p className="text-neoGray font-alexandria text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-normal leading-normal w-full">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

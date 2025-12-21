@@ -61,25 +61,25 @@ const Features = () => {
             return (
               <div
                 key={item.id}
-                className="w-full md:w-[300px] lg:w-[340px] xl:w-[384px] h-auto min-h-[264px] mx-auto rounded-card border border-grayBorder bg-white/5 px-6 sm:px-8 md:px-6 lg:px-8 xl:px-[36px] pt-8 sm:pt-10 md:pt-10 lg:pt-12 xl:pt-[48px] pb-8 sm:pb-10 md:pb-10 lg:pb-12 xl:pb-[48px] flex flex-col items-center"
+                className="w-full md:w-[300px] lg:w-[340px] xl:w-[384px] h-auto min-h-[220px] mx-auto rounded-card border border-grayBorder bg-white/5 px-6 sm:px-8 md:px-6 lg:px-8 xl:px-[36px] pt-6 sm:pt-8 md:pt-8 lg:pt-10 xl:pt-[36px] pb-6 sm:pb-8 md:pb-8 lg:pb-10 xl:pb-[36px] flex flex-col items-center"
               >
                 {/* Icon */}
                 <img
                   src={iconMap[item.iconKey]}
                   alt={item.title}
-                  className="w-12 h-12 object-contain"
+                  className="w-10 h-10 object-contain"
                 />
 
                 {/* Title */}
-                <h3 className="mt-[36px] text-neoWhite text-center font-inter text-[18px] font-normal leading-[140%]">
+                <h3 className="mt-[24px] text-neoWhite text-center font-inter text-[18px] font-normal leading-[140%]">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="mt-[16px] text-neoGray text-center font-alexandria text-[12px] font-normal leading-normal">
+                <p className="mt-[12px] text-neoGray text-center font-alexandria text-[12px] font-normal leading-normal">
                   {description}
                 </p>
-                {/* bottom gap comes from pb-[48px] */}
+                {/* bottom gap comes from pb-[36px] */}
               </div>
             );
           })}
